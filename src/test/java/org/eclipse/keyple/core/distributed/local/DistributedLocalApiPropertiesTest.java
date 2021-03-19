@@ -13,12 +13,31 @@ package org.eclipse.keyple.core.distributed.local;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import java.io.FileInputStream;
+import java.io.InputStream;
+import java.util.Properties;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class DistributedLocalApiPropertiesTest {
 
+  private static String libVersion;
+
+  @BeforeClass
+  public static void beforeClass() throws Exception {
+    InputStream inputStream = new FileInputStream("gradle.properties");
+    try {
+      Properties properties = new Properties();
+      properties.load(inputStream);
+      libVersion = properties.getProperty("version");
+    } finally {
+      inputStream.close();
+    }
+  }
+
   @Test
   public void versionIsCorrectlyWritten() {
-    assertThat(DistributedLocalApiProperties.VERSION).matches("\\d+(\\.\\d+)+");
+    String apiVersion = DistributedLocalApiProperties.VERSION;
+    assertThat(apiVersion).isEqualTo(libVersion).matches("\\d+\\.\\d+");
   }
 }
