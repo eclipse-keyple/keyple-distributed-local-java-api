@@ -15,34 +15,34 @@ import org.eclipse.keyple.core.common.KeyplePluginEvent;
 import org.eclipse.keyple.core.common.KeypleReaderEvent;
 
 /**
- * Manager associated to a {@link org.eclipse.keyple.core.distributed.local.spi.LocalServiceSpi}.
+ * API associated to a {@link org.eclipse.keyple.core.distributed.local.spi.LocalServiceSpi}.
  *
  * @since 2.0
  */
-public interface LocalServiceManager {
+public interface LocalServiceApi {
 
   /**
-   * Must be invoked when a message is received from the remote plugin in order to execute a
-   * specific command on a local reader.
+   * Must be invoked when a message is received from the network remote side in order to invoke a
+   * specific service locally.
    *
-   * @param readerName The name of the targeted local reader.
-   * @param jsonData A JSON string containing all information about the command to execute.
-   * @return A JSON string containing the result of the command to send to the remote reader. It can
-   *     be empty if the command returns nothing.
-   * @throws IllegalArgumentException If the provided reader name or the JSON data are null or empty
-   *     or if the JSON data is malformed.
-   * @throws IllegalStateException If there is no local reader registered with the provided name.
+   * @param jsonData A JSON string containing all information about the service to invoke.
+   * @param readerName The name of the targeted local reader (optional). It is required if the
+   *     service is specific to a particular reader.
+   * @return A JSON string containing the result of the service to send back to the network remote
+   *     side. It can be empty if the service returns nothing.
+   * @throws IllegalStateException If the service or the reader or the associated plugin is no
+   *     longer registered.
    * @since 2.0
    */
-  String executeLocally(String readerName, String jsonData);
+  String executeLocally(String jsonData, String readerName);
 
   /**
    * Indicates if a specific local reader is observable.
    *
    * @param readerName The name of the local reader to check.
    * @return true if the local reader is observable, otherwise false.
-   * @throws IllegalArgumentException If the provided reader name is null or empty.
-   * @throws IllegalStateException If there is no local reader registered with the provided name.
+   * @throws IllegalStateException If the service or the reader or the associated plugin is no
+   *     longer registered.
    * @since 2.0
    */
   boolean isReaderObservable(String readerName);
@@ -56,9 +56,8 @@ public interface LocalServiceManager {
    * org.eclipse.keyple.core.common.KeypleReaderEvent} event occurs.
    *
    * @param readerName The name of the observable local reader to observe.
-   * @throws IllegalArgumentException if the provided reader name is null or empty.
-   * @throws IllegalStateException If there is no local reader registered with the provided name or
-   *     if the local reader is not observable.
+   * @throws IllegalStateException If the service or the reader or the associated plugin is no
+   *     longer registered or if the local reader is not observable.
    * @since 2.0
    */
   void startReaderObservation(String readerName);
@@ -67,7 +66,6 @@ public interface LocalServiceManager {
    * Stops to observe a specific observable local reader if it is registered and observed.
    *
    * @param readerName The name of the observable local reader to stop observing.
-   * @throws IllegalArgumentException if the provided reader name is null or empty.
    * @since 2.0
    */
   void stopReaderObservation(String readerName);
@@ -80,7 +78,8 @@ public interface LocalServiceManager {
    * KeyplePluginEvent)} will be invoked when a {@link
    * org.eclipse.keyple.core.common.KeyplePluginEvent} event occurs.
    *
-   * @throws IllegalStateException If there is no observable local plugin.
+   * @throws IllegalStateException If the service is no longer registered or if there is no
+   *     observable local plugin.
    * @since 2.0
    */
   void startPluginsObservation();
@@ -98,7 +97,7 @@ public interface LocalServiceManager {
    * <p>This feature is only useful for remote control of pool plugins.
    *
    * @param poolPluginNames The list of names of the local pool plugins to manage.
-   * @throws IllegalArgumentException If the provided list is null or empty.
+   * @throws IllegalStateException If the service is no longer registered.
    * @since 2.0
    */
   void setPoolPluginNames(String... poolPluginNames);

@@ -13,7 +13,7 @@ package org.eclipse.keyple.core.distributed.local.spi;
 
 import org.eclipse.keyple.core.common.KeyplePluginEvent;
 import org.eclipse.keyple.core.common.KeypleReaderEvent;
-import org.eclipse.keyple.core.distributed.local.LocalServiceManager;
+import org.eclipse.keyple.core.distributed.local.LocalServiceApi;
 
 /**
  * Distributed local service extension able to communicate with a distributed remote plugin
@@ -24,12 +24,12 @@ import org.eclipse.keyple.core.distributed.local.LocalServiceManager;
 public interface LocalServiceSpi {
 
   /**
-   * Binds the associated Keyple Core {@link LocalServiceManager} manager.
+   * Connects the associated Keyple Core {@link LocalServiceApi} API.
    *
-   * @param manager The manager.
+   * @param LocalServiceApi The API to connect.
    * @since 2.0
    */
-  void setManager(LocalServiceManager manager);
+  void connect(LocalServiceApi LocalServiceApi);
 
   /**
    * Gets the name of the distributed local service extension.
