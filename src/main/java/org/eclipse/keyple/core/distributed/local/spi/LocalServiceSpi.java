@@ -11,8 +11,6 @@
  ************************************************************************************** */
 package org.eclipse.keyple.core.distributed.local.spi;
 
-import org.eclipse.keyple.core.common.KeyplePluginEvent;
-import org.eclipse.keyple.core.common.KeypleReaderEvent;
 import org.eclipse.keyple.core.distributed.local.LocalServiceApi;
 
 /**
@@ -26,10 +24,10 @@ public interface LocalServiceSpi {
   /**
    * Connects the associated Keyple Core {@link LocalServiceApi} API.
    *
-   * @param LocalServiceApi The API to connect.
+   * @param localServiceApi The API to connect.
    * @since 2.0
    */
-  void connect(LocalServiceApi LocalServiceApi);
+  void connect(LocalServiceApi localServiceApi);
 
   /**
    * Gets the name of the distributed local service extension.
@@ -40,24 +38,26 @@ public interface LocalServiceSpi {
   String getName();
 
   /**
-   * Invoked when a {@link KeyplePluginEvent} event occurs in order to be forwarded to the remote
-   * plugin.
+   * Invoked when a plugin event occurs in order to be forwarded to the remote plugin.
+   *
+   * <p>This method will only be invoked if the start reader detection functional method has been
+   * previously invoked in order to activate the observation of all local plugins.
    *
    * @param readerName The name of the associated local reader.
    * @param jsonData The plugin event as a JSON data to forward to the remote plugin.
-   * @param pluginEvent The plugin event.
    * @since 2.0
    */
-  void onPluginEvent(String readerName, String jsonData, KeyplePluginEvent pluginEvent);
+  void onPluginEvent(String readerName, String jsonData);
 
   /**
-   * Invoked when a {@link KeypleReaderEvent} event occurs in order to be forwarded to the remote
-   * plugin.
+   * Invoked when a reader event occurs in order to be forwarded to the remote plugin.
+   *
+   * <p>This method will only be invoked if the start cart detection functional method has been
+   * previously invoked in order to activate the observation of a specific local reader.
    *
    * @param readerName The name of the associated local reader.
    * @param jsonData The reader event as a JSON data to forward to the remote plugin.
-   * @param readerEvent The reader event.
    * @since 2.0
    */
-  void onReaderEvent(String readerName, String jsonData, KeypleReaderEvent readerEvent);
+  void onReaderEvent(String readerName, String jsonData);
 }

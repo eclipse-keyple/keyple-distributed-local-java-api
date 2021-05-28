@@ -11,15 +11,23 @@
  ************************************************************************************** */
 package org.eclipse.keyple.core.distributed.local;
 
-import org.eclipse.keyple.core.common.KeyplePluginEvent;
-import org.eclipse.keyple.core.common.KeypleReaderEvent;
-
 /**
  * API associated to a {@link org.eclipse.keyple.core.distributed.local.spi.LocalServiceSpi}.
  *
  * @since 2.0
  */
 public interface LocalServiceApi {
+
+  /**
+   * Specifies the names of the local pool plugins to manage.
+   *
+   * <p>This feature is only useful for remote control of pool plugins.
+   *
+   * @param poolPluginNames The list of names of the local pool plugins to manage.
+   * @throws IllegalStateException If the service is no longer registered.
+   * @since 2.0
+   */
+  void setPoolPluginNames(String... poolPluginNames);
 
   /**
    * Must be invoked when a message is received from the network remote side in order to invoke a
@@ -35,70 +43,4 @@ public interface LocalServiceApi {
    * @since 2.0
    */
   String executeLocally(String jsonData, String readerName);
-
-  /**
-   * Indicates if a specific local reader is observable.
-   *
-   * @param readerName The name of the local reader to check.
-   * @return true if the local reader is observable, otherwise false.
-   * @throws IllegalStateException If the service or the reader or the associated plugin is no
-   *     longer registered.
-   * @since 2.0
-   */
-  boolean isReaderObservable(String readerName);
-
-  /**
-   * Starts to observe a specific observable local reader if it is not already observed.
-   *
-   * <p>The method {@link
-   * org.eclipse.keyple.core.distributed.local.spi.LocalServiceSpi#onReaderEvent(String, String,
-   * KeypleReaderEvent)} will be invoked when a {@link
-   * org.eclipse.keyple.core.common.KeypleReaderEvent} event occurs.
-   *
-   * @param readerName The name of the observable local reader to observe.
-   * @throws IllegalStateException If the service or the reader or the associated plugin is no
-   *     longer registered or if the local reader is not observable.
-   * @since 2.0
-   */
-  void startReaderObservation(String readerName);
-
-  /**
-   * Stops to observe a specific observable local reader if it is registered and observed.
-   *
-   * @param readerName The name of the observable local reader to stop observing.
-   * @since 2.0
-   */
-  void stopReaderObservation(String readerName);
-
-  /**
-   * Starts to observe all observable local plugins.
-   *
-   * <p>The method {@link
-   * org.eclipse.keyple.core.distributed.local.spi.LocalServiceSpi#onPluginEvent(String, String,
-   * KeyplePluginEvent)} will be invoked when a {@link
-   * org.eclipse.keyple.core.common.KeyplePluginEvent} event occurs.
-   *
-   * @throws IllegalStateException If the service is no longer registered or if there is no
-   *     observable local plugin.
-   * @since 2.0
-   */
-  void startPluginsObservation();
-
-  /**
-   * Stops to observe all observable local plugins if they are registered and observed.
-   *
-   * @since 2.0
-   */
-  void stopPluginsObservation();
-
-  /**
-   * Specifies the names of the local pool plugins to manage.
-   *
-   * <p>This feature is only useful for remote control of pool plugins.
-   *
-   * @param poolPluginNames The list of names of the local pool plugins to manage.
-   * @throws IllegalStateException If the service is no longer registered.
-   * @since 2.0
-   */
-  void setPoolPluginNames(String... poolPluginNames);
 }
