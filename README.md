@@ -4,7 +4,7 @@
 
 The **Keyple Distributed Local API** Java library contains the core Keyple interfaces for development of Keyple distributed local services.
 
-This library **should not be import explicitly** by the main application.
+This library **should not be imported explicitly** by the main application.
 
 ## User Guide & Download Information
 
