@@ -1,4 +1,4 @@
-url: https://github.com/eclipse/keyple-java-distributed-local-api
+url: https://github.com/eclipse/keyple-distributed-local-java-api
 organization:
   name: Eclipse Keyple
   url: https://keyple.org/
@@ -16,9 +16,9 @@ developers:
   - name: Pierre Terrée
     email: pierre.terree@calypsonet.org
 scm:
-  connection: scm:git:git://github.com/eclipse/keyple-java-distributed-local-api.git
-  developerConnection: scm:git:https://github.com/eclipse/keyple-java-distributed-local-api.git
-  url: https://github.com/eclipse/keyple-java-distributed-local-api
+  connection: scm:git:git://github.com/eclipse/keyple-distributed-local-java-api.git
+  developerConnection: scm:git:https://github.com/eclipse/keyple-distributed-local-java-api.git
+  url: https://github.com/eclipse/keyple-distributed-local-java-api
 ciManagement:
   system: Jenkins
-  url: https://ci.eclipse.org/keyple/job/Keyple/job/keyple-java-distributed-local-api/
+  url: https://ci.eclipse.org/keyple/job/Keyple/job/keyple-distributed-local-java-api/
