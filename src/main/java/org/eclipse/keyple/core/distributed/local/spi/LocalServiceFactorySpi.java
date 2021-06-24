@@ -27,12 +27,12 @@ public interface LocalServiceFactorySpi {
   String getDistributedLocalApiVersion();
 
   /**
-   * Gets the commons's API version used at compile time.
+   * Gets the common's API version used at compile time.
    *
    * @return A not empty string.
    * @since 2.0
    */
-  String getCommonsApiVersion();
+  String getCommonApiVersion();
 
   /**
    * Retrieves the name of the distributed local service that will be instantiated by this factory.
