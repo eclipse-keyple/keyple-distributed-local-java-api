@@ -14,7 +14,7 @@ package org.eclipse.keyple.core.distributed.local;
 /**
  * API associated to a {@link org.eclipse.keyple.core.distributed.local.spi.LocalServiceSpi}.
  *
- * @since 2.0
+ * @since 2.0.0
  */
 public interface LocalServiceApi {
 
@@ -25,7 +25,7 @@ public interface LocalServiceApi {
    *
    * @param poolPluginNames The list of names of the local pool plugins to manage.
    * @throws IllegalStateException If the service is no longer registered.
-   * @since 2.0
+   * @since 2.0.0
    */
   void setPoolPluginNames(String... poolPluginNames);
 
@@ -40,7 +40,7 @@ public interface LocalServiceApi {
    *     side. It can be empty if the service returns nothing.
    * @throws IllegalStateException If the service or the reader or the associated plugin is no
    *     longer registered.
-   * @since 2.0
+   * @since 2.0.0
    */
   String executeLocally(String jsonData, String readerName);
 }

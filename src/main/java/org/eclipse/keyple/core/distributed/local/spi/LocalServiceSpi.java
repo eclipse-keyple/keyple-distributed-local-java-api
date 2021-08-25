@@ -17,7 +17,7 @@ import org.eclipse.keyple.core.distributed.local.LocalServiceApi;
  * Distributed local service extension able to communicate with a distributed remote plugin
  * extension.
  *
- * @since 2.0
+ * @since 2.0.0
  */
 public interface LocalServiceSpi {
 
@@ -25,7 +25,7 @@ public interface LocalServiceSpi {
    * Connects the associated Keyple Core {@link LocalServiceApi} API.
    *
    * @param localServiceApi The API to connect.
-   * @since 2.0
+   * @since 2.0.0
    */
   void connect(LocalServiceApi localServiceApi);
 
@@ -33,7 +33,7 @@ public interface LocalServiceSpi {
    * Gets the name of the distributed local service extension.
    *
    * @return A not empty string.
-   * @since 2.0
+   * @since 2.0.0
    */
   String getName();
 
@@ -45,7 +45,7 @@ public interface LocalServiceSpi {
    *
    * @param readerName The name of the associated local reader.
    * @param jsonData The plugin event as a JSON data to forward to the remote plugin.
-   * @since 2.0
+   * @since 2.0.0
    */
   void onPluginEvent(String readerName, String jsonData);
 
@@ -57,7 +57,7 @@ public interface LocalServiceSpi {
    *
    * @param readerName The name of the associated local reader.
    * @param jsonData The reader event as a JSON data to forward to the remote plugin.
-   * @since 2.0
+   * @since 2.0.0
    */
   void onReaderEvent(String readerName, String jsonData);
 }

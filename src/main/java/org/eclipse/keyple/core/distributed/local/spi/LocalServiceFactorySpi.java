@@ -14,7 +14,7 @@ package org.eclipse.keyple.core.distributed.local.spi;
 /**
  * Factory of {@link LocalServiceSpi}.
  *
- * @since 2.0
+ * @since 2.0.0
  */
 public interface LocalServiceFactorySpi {
 
@@ -22,7 +22,7 @@ public interface LocalServiceFactorySpi {
    * Gets the distributed local's API version used at compile time.
    *
    * @return A not empty string.
-   * @since 2.0
+   * @since 2.0.0
    */
   String getDistributedLocalApiVersion();
 
@@ -30,7 +30,7 @@ public interface LocalServiceFactorySpi {
    * Gets the common's API version used at compile time.
    *
    * @return A not empty string.
-   * @since 2.0
+   * @since 2.0.0
    */
   String getCommonApiVersion();
 
@@ -38,7 +38,7 @@ public interface LocalServiceFactorySpi {
    * Retrieves the name of the distributed local service that will be instantiated by this factory.
    *
    * @return A not empty string.
-   * @since 2.0
+   * @since 2.0.0
    */
   String getLocalServiceName();
 
@@ -46,7 +46,7 @@ public interface LocalServiceFactorySpi {
    * Retrieves an instance of a distributed local service SPI (can be a singleton or not).
    *
    * @return A not null reference.
-   * @since 2.0
+   * @since 2.0.0
    */
   LocalServiceSpi getLocalService();
 }
