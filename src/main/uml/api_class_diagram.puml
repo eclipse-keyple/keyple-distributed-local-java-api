@@ -1,0 +1,100 @@
+@startuml
+title
+    Keyple 2.0 - keyple-distributed-local-java-api - 2.0 (24/06/2021)
+end title
+
+' == THEME ==
+
+'Couleurs issues de : https://htmlcolorcodes.com/fr/tableau-de-couleur/tableau-de-couleur-design-plat/
+!define C_GREY1 F8F9F9
+!define C_GREY2 F2F3F4
+!define C_GREY3 E5E7E9
+!define C_GREY4 D7DBDD
+!define C_GREY5 CACFD2
+!define C_GREY6 BDC3C7
+!define C_LINK 3498DB
+!define C_USE 27AE60
+
+skinparam Shadowing false
+skinparam ClassFontStyle italic
+skinparam ClassBorderColor #D4AC0D
+skinparam stereotypeABorderColor #A9DCDF
+skinparam stereotypeIBorderColor #B4A7E5
+skinparam stereotypeCBorderColor #ADD1B2
+skinparam stereotypeEBorderColor #EB93DF
+' Red
+skinparam ClassBackgroundColor<<red>> #FDEDEC
+skinparam ClassBorderColor<<red>> #E74C3C
+hide <<red>> stereotype
+' Purple
+skinparam ClassBackgroundColor<<purple>> #F4ECF7
+skinparam ClassBorderColor<<purple>> #8E44AD
+hide <<purple>> stereotype
+' blue
+skinparam ClassBackgroundColor<<blue>> #EBF5FB
+skinparam ClassBorderColor<<blue>> #3498DB
+hide <<blue>> stereotype
+' Green
+skinparam ClassBackgroundColor<<green>> #E9F7EF
+skinparam ClassBorderColor<<green>> #27AE60
+hide <<green>> stereotype
+' Grey
+skinparam ClassBackgroundColor<<grey>> #EAECEE
+skinparam ClassBorderColor<<grey>> #2C3E50
+hide <<grey>> stereotype
+
+' == CONTENT ==
+
+legend top
+    __Colors legend__ :
+    * __Keyple Distributed Solution Configuration modes__ :
+    ** <back:lightGreen>**Reader Client Side**</back> (Local Service on **Client**)
+    ** <back:plum>**Reader Server Side**</back> (Local Service on **Server** with **Plugin** or **ObservablePlugin**)
+    ** <back:lightBlue>**Reader Server Side**</back> (Local Service on **Server** with **PoolPlugin**)
+end legend
+
+package "org.eclipse.keyple.core.distributed.local" as api {
+    +class "**final** DistributedLocalApiProperties" as ApiProperties {
+        +{static} **final** String VERSION
+    }
+    +interface LocalServiceApi {
+        --
+        +String executeLocally (String jsonData, String readerName)
+        .. <back:lightBlue>**Pool Reader Server Side**</back> ..
+        +void setPoolPluginNames (String... poolPluginNames)
+    }
+    package spi {
+        +interface LocalServiceFactorySpi {
+            +String getDistributedLocalApiVersion ()
+            +String getCommonApiVersion ()
+            +String getLocalServiceName ()
+            +LocalServiceSpi getLocalService ()
+        }
+        +interface LocalServiceSpi {
+            --
+            +void connect (LocalServiceApi localServiceApi)
+            +String getName ()
+            .. <back:plum>**Reader Server Side**</back> ..
+            +void onPluginEvent (String readerName, String jsonData)
+            +void onReaderEvent (String readerName, String jsonData)
+        }
+    }
+}
+
+' Associations
+
+LocalServiceFactorySpi .left.> ApiProperties #C_LINK : provide\nAPI version <
+LocalServiceFactorySpi ..> LocalServiceSpi #C_LINK : provide >
+
+LocalServiceSpi .left.> LocalServiceApi #C_USE : use >
+
+' == LAYOUT ==
+
+'PoolRemotePluginSpi -[hidden]- ObservableRemotePluginSpi
+
+' == STYLE ==
+
+package api #C_GREY1 {}
+package spi #C_GREY2 {}
+
+@enduml

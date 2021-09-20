@@ -8,9 +8,9 @@ The **Keyple Distributed Local Java API** is dedicated to the development of spe
 
 The full documentation, including the **user guide**, **download information** and **contribution guide**, is available on the Keyple website [keyple.org](https://keyple.org).
 
-## Javadoc
+## API documentation
 
-The javadoc is available online: [eclipse.github.io/keyple-distributed-local-java-api/](https://eclipse.github.io/keyple-distributed-local-java-api/)
+API documentation & class diagram is available online: [eclipse.github.io/keyple-distributed-local-java-api](https://eclipse.github.io/keyple-distributed-local-java-api)
 
 ## Examples
 
