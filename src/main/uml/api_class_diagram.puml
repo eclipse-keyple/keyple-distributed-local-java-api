@@ -1,6 +1,6 @@
 @startuml
 title
-    Keyple 2.0 - keyple-distributed-local-java-api - 2.0 (24/06/2021)
+    Keyple - keyple-distributed-local-java-api - 2.0.+ (24/06/2021)
 end title
 
 ' == THEME ==
@@ -47,7 +47,7 @@ hide <<grey>> stereotype
 
 legend top
     __Colors legend__ :
-    * __Keyple Distributed Solution Configuration modes__ :
+    * __Keyple Distributed solution usage modes__ :
     ** <back:lightGreen>**Reader Client Side**</back> (Local Service on **Client**)
     ** <back:plum>**Reader Server Side**</back> (Local Service on **Server** with **Plugin** or **ObservablePlugin**)
     ** <back:lightBlue>**Reader Server Side**</back> (Local Service on **Server** with **PoolPlugin**)
