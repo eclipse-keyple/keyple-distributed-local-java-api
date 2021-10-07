@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1430px" preserveAspectRatio="none" style="width:1932px;height:1430px;background:#FFFFFF;" version="1.1" viewBox="0 0 1932 1430" width="1932.5px" zoomAndPan="magnify"><defs><filter height="1" id="bb93v5i3ibqm10" width="1" x="0" y="0"><feFlood flood-color="#90EE90" result="flood"/><feComposite in="SourceGraphic" in2="flood" operator="over"/></filter><filter height="1" id="bb93v5i3ibqm11" width="1" x="0" y="0"><feFlood flood-color="#DDA0DD" result="flood"/><feComposite in="SourceGraphic" in2="flood" operator="over"/></filter><filter height="1" id="bb93v5i3ibqm12" width="1" x="0" y="0"><feFlood flood-color="#ADD8E6" result="flood"/><feComposite in="SourceGraphic" in2="flood" operator="over"/></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="45" lengthAdjust="spacing" textLength="1220" x="340" y="46.7139">Keyple - keyple-distributed-local-java-api - 2.0.+ (24/06/2021)</text><rect fill="#DDDDDD" height="245.1172" rx="12.5" ry="12.5" style="stroke:#000000;stroke-width:2.5;" width="1425" x="236.25" y="76.6016"/><text fill="#000000" font-family="sans-serif" font-size="35" lengthAdjust="spacing" text-decoration="underline" textLength="220" x="251.25" y="125.4346">Colors legend</text><text fill="#000000" font-family="sans-serif" font-size="35" lengthAdjust="spacing" textLength="10" x="481.25" y="125.4346">:</text><ellipse cx="265" cy="158.3984" fill="#000000" rx="6.25" ry="6.25" style="stroke:#000000;stroke-width:0.0;"/><text fill="#000000" font-family="sans-serif" font-size="35" lengthAdjust="spacing" text-decoration="underline" textLength="642.5" x="283.75" y="169.458">Keyple Distributed solution usage modes</text><text fill="#000000" font-family="sans-serif" font-size="35" lengthAdjust="spacing" textLength="10" x="936.25" y="169.458">:</text><rect fill="#000000" height="8.75" style="stroke:#000000;stroke-width:0.0;" width="8.75" x="303.75" y="201.1719"/><text fill="#000000" filter="url(#bb93v5i3ibqm10)" font-family="sans-serif" font-size="35" font-weight="bold" lengthAdjust="spacing" textLength="327.5" x="316.25" y="213.4814">Reader Client Side</text><text fill="#000000" font-family="sans-serif" font-size="35" lengthAdjust="spacing" textLength="275" x="653.75" y="213.4814">(Local Service on</text><text fill="#000000" font-family="sans-serif" font-size="35" font-weight="bold" lengthAdjust="spacing" textLength="102.5" x="938.75" y="213.4814">Client</text><text fill="#000000" font-family="sans-serif" font-size="35" lengthAdjust="spacing" textLength="12.5" x="1041.25" y="213.4814">)</text><rect fill="#000000" height="8.75" style="stroke:#000000;stroke-width:0.0;" width="8.75" x="303.75" y="245.1953"/><text fill="#000000" filter="url(#bb93v5i3ibqm11)" font-family="sans-serif" font-size="35" font-weight="bold" lengthAdjust="spacing" textLength="345" x="316.25" y="257.5049">Reader Server Side</text><text fill="#000000" font-family="sans-serif" font-size="35" lengthAdjust="spacing" textLength="275" x="671.25" y="257.5049">(Local Service on</text><text fill="#000000" font-family="sans-serif" font-size="35" font-weight="bold" lengthAdjust="spacing" textLength="120" x="956.25" y="257.5049">Server</text><text fill="#000000" font-family="sans-serif" font-size="35" lengthAdjust="spacing" textLength="60" x="1086.25" y="257.5049">with</text><text fill="#000000" font-family="sans-serif" font-size="35" font-weight="bold" lengthAdjust="spacing" textLength="110" x="1156.25" y="257.5049">Plugin</text><text fill="#000000" font-family="sans-serif" font-size="35" lengthAdjust="spacing" textLength="32.5" x="1276.25" y="257.5049">or</text><text fill="#000000" font-family="sans-serif" font-size="35" font-weight="bold" lengthAdjust="spacing" textLength="315" x="1318.75" y="257.5049">ObservablePlugin</text><text fill="#000000" font-family="sans-serif" font-size="35" lengthAdjust="spacing" textLength="12.5" x="1633.75" y="257.5049">)</text><rect fill="#000000" height="8.75" style="stroke:#000000;stroke-width:0.0;" width="8.75" x="303.75" y="289.2188"/><text fill="#000000" filter="url(#bb93v5i3ibqm12)" font-family="sans-serif" font-size="35" font-weight="bold" lengthAdjust="spacing" textLength="345" x="316.25" y="301.5283">Reader Server Side</text><text fill="#000000" font-family="sans-serif" font-size="35" lengthAdjust="spacing" textLength="275" x="671.25" y="301.5283">(Local Service on</text><text fill="#000000" font-family="sans-serif" font-size="35" font-weight="bold" lengthAdjust="spacing" textLength="120" x="956.25" y="301.5283">Server</text><text fill="#000000" font-family="sans-serif" font-size="35" lengthAdjust="spacing" textLength="60" x="1086.25" y="301.5283">with</text><text fill="#000000" font-family="sans-serif" font-size="35" font-weight="bold" lengthAdjust="spacing" textLength="187.5" x="1156.25" y="301.5283">PoolPlugin</text><text fill="#000000" font-family="sans-serif" font-size="35" lengthAdjust="spacing" textLength="12.5" x="1343.75" y="301.5283">)</text><!--MD5=[7442f3b126ee602ae02566c1a49e158a]
+cluster api--><polygon fill="#F8F9F9" points="40,359.2188,762.5,359.2188,780,418.2422,1890,418.2422,1890,1414.2188,40,1414.2188,40,359.2188" style="stroke:#000000;stroke-width:3.75;"/><line style="stroke:#000000;stroke-width:3.75;" x1="40" x2="780" y1="418.2422" y2="418.2422"/><text fill="#000000" font-family="sans-serif" font-size="35" font-weight="bold" lengthAdjust="spacing" textLength="707.5" x="50" y="400.5518">org.eclipse.keyple.core.distributed.local</text><!--MD5=[f7e0e2453c87923036c1ac2adfb9cbf0]
+cluster spi--><polygon fill="#F2F3F4" points="990,469.2188,1057.5,469.2188,1075,528.2422,1830,528.2422,1830,1354.2188,990,1354.2188,990,469.2188" style="stroke:#000000;stroke-width:3.75;"/><line style="stroke:#000000;stroke-width:3.75;" x1="990" x2="1075" y1="528.2422" y2="528.2422"/><text fill="#000000" font-family="sans-serif" font-size="35" font-weight="bold" lengthAdjust="spacing" textLength="52.5" x="1000" y="510.5518">spi</text><!--MD5=[120218adfd8782b0057db0a1b8294250]
+class ApiProperties--><rect codeLine="56" fill="#FEFECE" height="154.5898" id="ApiProperties" style="stroke:#D4AC0D;stroke-width:3.75;" width="585" x="270" y="610.4688"/><ellipse cx="307.5" cy="650.4688" fill="#ADD1B2" rx="27.5" ry="27.5" style="stroke:#ADD1B2;stroke-width:2.5;"/><path d="M312.5,641.7188 Q313.0078,640.4688 313.5938,639.8438 Q314.1797,639.2188 314.8438,639.2188 Q316.0156,639.2188 316.7578,639.9219 Q317.5,640.625 317.5,642.2656 L317.5,646.1719 Q317.5,647.8125 316.7969,648.5156 Q316.0938,649.2188 315,649.2188 Q314.0234,649.2188 313.3984,648.7891 Q312.7734,648.3594 312.5,647.2266 Q312.3828,646.4453 311.9531,646.0156 Q311.1719,645.1953 309.7656,644.7266 Q308.3594,644.2188 306.9531,644.2188 Q305.1953,644.2188 303.7109,644.9219 Q302.2656,645.625 301.1328,647.1875 Q300,648.75 300,650.8984 L300,653.2031 Q300,655.7813 302.1094,657.5 Q304.2188,659.2188 307.9688,659.2188 Q310.1953,659.2188 311.7578,658.7109 Q312.6563,658.4375 313.6719,657.5391 Q314.3359,657.0313 314.6875,656.875 Q315.0391,656.7188 315.4688,656.7188 Q316.2891,656.7188 316.875,657.3828 Q317.5,658.0078 317.5,658.9063 Q317.5,659.7656 316.6406,660.7813 Q315.3906,662.2656 313.3984,663.0859 Q310.7813,664.2188 307.5781,664.2188 Q303.8281,664.2188 300.8203,662.7344 Q298.3984,661.5625 296.6797,659.0234 Q295,656.4844 295,653.4766 L295,650.7422 Q295,647.6172 296.4844,644.8828 Q298.0078,642.1484 300.625,640.7031 Q303.2813,639.2188 306.25,639.2188 Q308.0469,639.2188 309.6094,639.8438 Q311.1719,640.4688 312.5,641.7188 Z " fill="#000000"/><ellipse cx="355" cy="649.2188" fill="#84BE84" rx="7.5" ry="7.5" style="stroke:#038048;stroke-width:2.5;"/><text fill="#000000" font-family="sans-serif" font-size="30" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="60" x="370" y="662.7441">final</text><text fill="#000000" font-family="sans-serif" font-size="30" font-style="italic" lengthAdjust="spacing" textLength="410" x="437.5" y="662.7441">DistributedLocalApiProperties</text><line style="stroke:#D4AC0D;stroke-width:3.75;" x1="272.5" x2="852.5" y1="690.4688" y2="690.4688"/><ellipse cx="297.5" cy="717.9688" rx="7.5" ry="7.5" style="stroke:#038048;stroke-width:2.5;fill:none;"/><text fill="#000000" font-family="sans-serif" font-size="27.5" font-weight="bold" lengthAdjust="spacing" text-decoration="underline" textLength="57.5" x="320" y="729.0161">final</text><text fill="#000000" font-family="sans-serif" font-size="27.5" lengthAdjust="spacing" text-decoration="underline" textLength="190" x="385" y="729.0161">String VERSION</text><line style="stroke:#D4AC0D;stroke-width:3.75;" x1="272.5" x2="852.5" y1="745.0586" y2="745.0586"/><!--MD5=[ebf06438c193d9dcd51c4e6022fc9394]
+class LocalServiceApi--><rect codeLine="59" fill="#FEFECE" height="233.7695" id="LocalServiceApi" style="stroke:#D4AC0D;stroke-width:3.75;" width="775" x="80" y="1045.4688"/><ellipse cx="331.875" cy="1085.4688" fill="#B4A7E5" rx="27.5" ry="27.5" style="stroke:#B4A7E5;stroke-width:2.5;"/><path d="M334.375,1077.9688 L334.375,1092.9688 L339.375,1092.9688 L340.5859,1092.9688 L341.875,1094.5313 L341.875,1095.4688 L341.875,1096.4063 L340.5859,1097.9688 L339.375,1097.9688 L324.375,1097.9688 L323.1641,1097.9688 L321.875,1096.4063 L321.875,1095.4688 L321.875,1094.5313 L323.1641,1092.9688 L324.375,1092.9688 L329.375,1092.9688 L329.375,1077.9688 L324.375,1077.9688 L323.1641,1077.9688 L321.875,1076.4063 L321.875,1075.4688 L321.875,1074.5313 L323.1641,1072.9688 L324.375,1072.9688 L339.375,1072.9688 L340.5859,1072.9688 L341.875,1074.5313 L341.875,1075.4688 L341.875,1076.4063 L340.5859,1077.9688 L339.375,1077.9688 L334.375,1077.9688 Z " fill="#000000"/><ellipse cx="395.625" cy="1084.2188" fill="#84BE84" rx="7.5" ry="7.5" style="stroke:#038048;stroke-width:2.5;"/><text fill="#000000" font-family="sans-serif" font-size="30" font-style="italic" lengthAdjust="spacing" textLength="222.5" x="410.625" y="1097.7441">LocalServiceApi</text><line style="stroke:#D4AC0D;stroke-width:3.75;" x1="82.5" x2="852.5" y1="1125.4688" y2="1125.4688"/><line style="stroke:#D4AC0D;stroke-width:2.5;" x1="82.5" x2="852.5" y1="1145.4688" y2="1145.4688"/><ellipse cx="107.5" cy="1172.9688" fill="#84BE84" rx="7.5" ry="7.5" style="stroke:#038048;stroke-width:2.5;"/><text fill="#000000" font-family="sans-serif" font-size="27.5" lengthAdjust="spacing" textLength="710" x="130" y="1184.0161">String executeLocally (String jsonData, String readerName)</text><ellipse cx="107.5" cy="1252.1484" fill="#84BE84" rx="7.5" ry="7.5" style="stroke:#038048;stroke-width:2.5;"/><text fill="#000000" font-family="sans-serif" font-size="27.5" lengthAdjust="spacing" textLength="627.5" x="130" y="1263.1958">void setPoolPluginNames (String... poolPluginNames)</text><line style="stroke:#D4AC0D;stroke-width:2.5;stroke-dasharray:1.0,2.0;" x1="82.5" x2="301.25" y1="1217.3535" y2="1217.3535"/><text fill="#000000" filter="url(#bb93v5i3ibqm12)" font-family="sans-serif" font-size="27.5" font-weight="bold" lengthAdjust="spacing" textLength="332.5" x="301.25" y="1227.356">Pool Reader Server Side</text><line style="stroke:#D4AC0D;stroke-width:2.5;stroke-dasharray:1.0,2.0;" x1="633.75" x2="852.5" y1="1217.3535" y2="1217.3535"/><!--MD5=[ba23ee47f0072bc0aa0f26e4f66e8703]
+class LocalServiceFactorySpi--><rect codeLine="66" fill="#FEFECE" height="258.3594" id="LocalServiceFactorySpi" style="stroke:#D4AC0D;stroke-width:3.75;" width="535" x="1142.5" y="559.2188"/><ellipse cx="1227.25" cy="599.2188" fill="#B4A7E5" rx="27.5" ry="27.5" style="stroke:#B4A7E5;stroke-width:2.5;"/><path d="M1229.75,591.7188 L1229.75,606.7188 L1234.75,606.7188 L1235.9609,606.7188 L1237.25,608.2813 L1237.25,609.2188 L1237.25,610.1563 L1235.9609,611.7188 L1234.75,611.7188 L1219.75,611.7188 L1218.5391,611.7188 L1217.25,610.1563 L1217.25,609.2188 L1217.25,608.2813 L1218.5391,606.7188 L1219.75,606.7188 L1224.75,606.7188 L1224.75,591.7188 L1219.75,591.7188 L1218.5391,591.7188 L1217.25,590.1563 L1217.25,589.2188 L1217.25,588.2813 L1218.5391,586.7188 L1219.75,586.7188 L1234.75,586.7188 L1235.9609,586.7188 L1237.25,588.2813 L1237.25,589.2188 L1237.25,590.1563 L1235.9609,591.7188 L1234.75,591.7188 L1229.75,591.7188 Z " fill="#000000"/><ellipse cx="1285.25" cy="597.9688" fill="#84BE84" rx="7.5" ry="7.5" style="stroke:#038048;stroke-width:2.5;"/><text fill="#000000" font-family="sans-serif" font-size="30" font-style="italic" lengthAdjust="spacing" textLength="322.5" x="1300.25" y="611.4941">LocalServiceFactorySpi</text><line style="stroke:#D4AC0D;stroke-width:3.75;" x1="1145" x2="1675" y1="639.2188" y2="639.2188"/><line style="stroke:#D4AC0D;stroke-width:3.75;" x1="1145" x2="1675" y1="659.2188" y2="659.2188"/><ellipse cx="1170" cy="686.7188" fill="#84BE84" rx="7.5" ry="7.5" style="stroke:#038048;stroke-width:2.5;"/><text fill="#000000" font-family="sans-serif" font-size="27.5" lengthAdjust="spacing" textLength="470" x="1192.5" y="697.7661">String getDistributedLocalApiVersion ()</text><ellipse cx="1170" cy="721.3086" fill="#84BE84" rx="7.5" ry="7.5" style="stroke:#038048;stroke-width:2.5;"/><text fill="#000000" font-family="sans-serif" font-size="27.5" lengthAdjust="spacing" textLength="380" x="1192.5" y="732.356">String getCommonApiVersion ()</text><ellipse cx="1170" cy="755.8984" fill="#84BE84" rx="7.5" ry="7.5" style="stroke:#038048;stroke-width:2.5;"/><text fill="#000000" font-family="sans-serif" font-size="27.5" lengthAdjust="spacing" textLength="367.5" x="1192.5" y="766.9458">String getLocalServiceName ()</text><ellipse cx="1170" cy="790.4883" fill="#84BE84" rx="7.5" ry="7.5" style="stroke:#038048;stroke-width:2.5;"/><text fill="#000000" font-family="sans-serif" font-size="27.5" lengthAdjust="spacing" textLength="425" x="1192.5" y="801.5356">LocalServiceSpi getLocalService ()</text><!--MD5=[a6e181576af5f47505adeb022c95499b]
+class LocalServiceSpi--><rect codeLine="72" fill="#FEFECE" height="302.9492" id="LocalServiceSpi" style="stroke:#D4AC0D;stroke-width:3.75;" width="757.5" x="1031.25" y="1011.7188"/><ellipse cx="1274.375" cy="1051.7188" fill="#B4A7E5" rx="27.5" ry="27.5" style="stroke:#B4A7E5;stroke-width:2.5;"/><path d="M1276.875,1044.2188 L1276.875,1059.2188 L1281.875,1059.2188 L1283.0859,1059.2188 L1284.375,1060.7813 L1284.375,1061.7188 L1284.375,1062.6563 L1283.0859,1064.2188 L1281.875,1064.2188 L1266.875,1064.2188 L1265.6641,1064.2188 L1264.375,1062.6563 L1264.375,1061.7188 L1264.375,1060.7813 L1265.6641,1059.2188 L1266.875,1059.2188 L1271.875,1059.2188 L1271.875,1044.2188 L1266.875,1044.2188 L1265.6641,1044.2188 L1264.375,1042.6563 L1264.375,1041.7188 L1264.375,1040.7813 L1265.6641,1039.2188 L1266.875,1039.2188 L1281.875,1039.2188 L1283.0859,1039.2188 L1284.375,1040.7813 L1284.375,1041.7188 L1284.375,1042.6563 L1283.0859,1044.2188 L1281.875,1044.2188 L1276.875,1044.2188 Z " fill="#000000"/><ellipse cx="1338.125" cy="1050.4688" fill="#84BE84" rx="7.5" ry="7.5" style="stroke:#038048;stroke-width:2.5;"/><text fill="#000000" font-family="sans-serif" font-size="30" font-style="italic" lengthAdjust="spacing" textLength="222.5" x="1353.125" y="1063.9941">LocalServiceSpi</text><line style="stroke:#D4AC0D;stroke-width:3.75;" x1="1033.75" x2="1786.25" y1="1091.7188" y2="1091.7188"/><line style="stroke:#D4AC0D;stroke-width:2.5;" x1="1033.75" x2="1786.25" y1="1111.7188" y2="1111.7188"/><ellipse cx="1058.75" cy="1139.2188" fill="#84BE84" rx="7.5" ry="7.5" style="stroke:#038048;stroke-width:2.5;"/><text fill="#000000" font-family="sans-serif" font-size="27.5" lengthAdjust="spacing" textLength="575" x="1081.25" y="1150.2661">void connect (LocalServiceApi localServiceApi)</text><ellipse cx="1058.75" cy="1173.8086" fill="#84BE84" rx="7.5" ry="7.5" style="stroke:#038048;stroke-width:2.5;"/><text fill="#000000" font-family="sans-serif" font-size="27.5" lengthAdjust="spacing" textLength="210" x="1081.25" y="1184.856">String getName ()</text><ellipse cx="1058.75" cy="1252.9883" fill="#84BE84" rx="7.5" ry="7.5" style="stroke:#038048;stroke-width:2.5;"/><text fill="#000000" font-family="sans-serif" font-size="27.5" lengthAdjust="spacing" textLength="675" x="1081.25" y="1264.0356">void onPluginEvent (String readerName, String jsonData)</text><ellipse cx="1058.75" cy="1287.5781" fill="#84BE84" rx="7.5" ry="7.5" style="stroke:#038048;stroke-width:2.5;"/><text fill="#000000" font-family="sans-serif" font-size="27.5" lengthAdjust="spacing" textLength="692.5" x="1081.25" y="1298.6255">void onReaderEvent (String readerName, String jsonData)</text><line style="stroke:#D4AC0D;stroke-width:2.5;stroke-dasharray:1.0,2.0;" x1="1033.75" x2="1277.5" y1="1218.1934" y2="1218.1934"/><text fill="#000000" filter="url(#bb93v5i3ibqm11)" font-family="sans-serif" font-size="27.5" font-weight="bold" lengthAdjust="spacing" textLength="265" x="1277.5" y="1228.1958">Reader Server Side</text><line style="stroke:#D4AC0D;stroke-width:2.5;stroke-dasharray:1.0,2.0;" x1="1542.5" x2="1786.25" y1="1218.1934" y2="1218.1934"/><!--MD5=[e074787443691281e6486459aba16e12]
+reverse link ApiProperties to LocalServiceFactorySpi--><path codeLine="85" d="M868.495,687.9688 C957.9825,687.9688 1055.08,687.9688 1142.0175,687.9688 " fill="none" id="ApiProperties-backto-LocalServiceFactorySpi" style="stroke:#3498DB;stroke-width:2.5;stroke-dasharray:7.0,7.0;"/><polygon fill="#3498DB" points="855.3475,687.9688,877.8475,697.9688,867.8475,687.9688,877.8475,677.9688,855.3475,687.9688" style="stroke:#3498DB;stroke-width:2.5;"/><text fill="#000000" font-family="sans-serif" font-size="32.5" lengthAdjust="spacing" textLength="100" x="948.75" y="631.7065">provide</text><polygon fill="#000000" points="901.25,659.2871,923.8627,666.6344,923.8627,651.9398,901.25,659.2871" style="stroke:#000000;stroke-width:2.5;"/><text fill="#000000" font-family="sans-serif" font-size="32.5" lengthAdjust="spacing" textLength="162.5" x="933.75" y="672.5854">API version</text><!--MD5=[618e7031c65a5cf122f68545294b0993]
+link LocalServiceFactorySpi to LocalServiceSpi--><path codeLine="86" d="M1410,817.6587 C1410,873.4963 1410,939.7013 1410,998.9688 " fill="none" id="LocalServiceFactorySpi-to-LocalServiceSpi" style="stroke:#3498DB;stroke-width:2.5;stroke-dasharray:7.0,7.0;"/><polygon fill="#3498DB" points="1410,1011.5062,1420,989.0062,1410,999.0062,1400,989.0062,1410,1011.5062" style="stroke:#3498DB;stroke-width:2.5;"/><polygon fill="#000000" points="1422.5,927.1582,1429.8473,904.5455,1415.1527,904.5455,1422.5,927.1582" style="stroke:#000000;stroke-width:2.5;"/><text fill="#000000" font-family="sans-serif" font-size="32.5" lengthAdjust="spacing" textLength="100" x="1445" y="927.9565">provide</text><!--MD5=[5eb5da64408f485a31a23c2c58ced4bb]
+reverse link LocalServiceApi to LocalServiceSpi--><path codeLine="88" d="M868.5175,1162.9688 C922.2875,1162.9688 977.305,1162.9688 1030.6825,1162.9688 " fill="none" id="LocalServiceApi-backto-LocalServiceSpi" style="stroke:#27AE60;stroke-width:2.5;stroke-dasharray:7.0,7.0;"/><polygon fill="#27AE60" points="855.6125,1162.9688,878.1125,1172.9688,868.1125,1162.9688,878.1125,1152.9688,855.6125,1162.9688" style="stroke:#27AE60;stroke-width:2.5;"/><polygon fill="#000000" points="898.125,1133.4082,920.7377,1140.7555,920.7377,1126.0609,898.125,1133.4082" style="stroke:#000000;stroke-width:2.5;"/><text fill="#000000" font-family="sans-serif" font-size="32.5" lengthAdjust="spacing" textLength="52.5" x="933.125" y="1146.7065">use</text><!--MD5=[db17f8335db03f153c6202bae15a48a5]
+@startuml
+title
+    Keyple - keyple-distributed-local-java-api - 2.0.+ (24/06/2021)
+end title
+
+' == THEME ==
+
+'Couleurs issues de : https://htmlcolorcodes.com/fr/tableau-de-couleur/tableau-de-couleur-design-plat/
+!define C_GREY1 F8F9F9
+!define C_GREY2 F2F3F4
+!define C_GREY3 E5E7E9
+!define C_GREY4 D7DBDD
+!define C_GREY5 CACFD2
+!define C_GREY6 BDC3C7
+!define C_LINK 3498DB
+!define C_USE 27AE60
+
+skinparam Shadowing false
+skinparam ClassFontStyle italic
+skinparam ClassBorderColor #D4AC0D
+skinparam stereotypeABorderColor #A9DCDF
+skinparam stereotypeIBorderColor #B4A7E5
+skinparam stereotypeCBorderColor #ADD1B2
+skinparam stereotypeEBorderColor #EB93DF
+' Red
+skinparam ClassBackgroundColor<<red>> #FDEDEC
+skinparam ClassBorderColor<<red>> #E74C3C
+hide <<red>> stereotype
+' Purple
+skinparam ClassBackgroundColor<<purple>> #F4ECF7
+skinparam ClassBorderColor<<purple>> #8E44AD
+hide <<purple>> stereotype
+' blue
+skinparam ClassBackgroundColor<<blue>> #EBF5FB
+skinparam ClassBorderColor<<blue>> #3498DB
+hide <<blue>> stereotype
+' Green
+skinparam ClassBackgroundColor<<green>> #E9F7EF
+skinparam ClassBorderColor<<green>> #27AE60
+hide <<green>> stereotype
+' Grey
+skinparam ClassBackgroundColor<<grey>> #EAECEE
+skinparam ClassBorderColor<<grey>> #2C3E50
+hide <<grey>> stereotype
+
+' == CONTENT ==
+
+legend top
+    __Colors legend__ :
+    * __Keyple Distributed solution usage modes__ :
+    ** <back:lightGreen>**Reader Client Side**</back> (Local Service on **Client**)
+    ** <back:plum>**Reader Server Side**</back> (Local Service on **Server** with **Plugin** or **ObservablePlugin**)
+    ** <back:lightBlue>**Reader Server Side**</back> (Local Service on **Server** with **PoolPlugin**)
+end legend
+
+package "org.eclipse.keyple.core.distributed.local" as api {
+    +class "**final** DistributedLocalApiProperties" as ApiProperties {
+        +{static} **final** String VERSION
+    }
+    +interface LocalServiceApi {
+        - -
+        +String executeLocally (String jsonData, String readerName)
+        .. <back:lightBlue>**Pool Reader Server Side**</back> ..
+        +void setPoolPluginNames (String... poolPluginNames)
+    }
+    package spi {
+        +interface LocalServiceFactorySpi {
+            +String getDistributedLocalApiVersion ()
+            +String getCommonApiVersion ()
+            +String getLocalServiceName ()
+            +LocalServiceSpi getLocalService ()
+        }
+        +interface LocalServiceSpi {
+            - -
+            +void connect (LocalServiceApi localServiceApi)
+            +String getName ()
+            .. <back:plum>**Reader Server Side**</back> ..
+            +void onPluginEvent (String readerName, String jsonData)
+            +void onReaderEvent (String readerName, String jsonData)
+        }
+    }
+}
+
+' Associations
+
+LocalServiceFactorySpi .left.> ApiProperties #C_LINK : provide\nAPI version <
+LocalServiceFactorySpi ..> LocalServiceSpi #C_LINK : provide >
+
+LocalServiceSpi .left.> LocalServiceApi #C_USE : use >
+
+' == LAYOUT ==
+
+'PoolRemotePluginSpi -[hidden]- ObservableRemotePluginSpi
+
+' == STYLE ==
+
+package api #C_GREY1 {}
+package spi #C_GREY2 {}
+
+@enduml
+
+@startuml
+title
+    Keyple - keyple-distributed-local-java-api - 2.0.+ (24/06/2021)
+end title
+
+
+
+skinparam Shadowing false
+skinparam ClassFontStyle italic
+skinparam ClassBorderColor #D4AC0D
+skinparam stereotypeABorderColor #A9DCDF
+skinparam stereotypeIBorderColor #B4A7E5
+skinparam stereotypeCBorderColor #ADD1B2
+skinparam stereotypeEBorderColor #EB93DF
+skinparam ClassBackgroundColor<<red>> #FDEDEC
+skinparam ClassBorderColor<<red>> #E74C3C
+hide <<red>> stereotype
+skinparam ClassBackgroundColor<<purple>> #F4ECF7
+skinparam ClassBorderColor<<purple>> #8E44AD
+hide <<purple>> stereotype
+skinparam ClassBackgroundColor<<blue>> #EBF5FB
+skinparam ClassBorderColor<<blue>> #3498DB
+hide <<blue>> stereotype
+skinparam ClassBackgroundColor<<green>> #E9F7EF
+skinparam ClassBorderColor<<green>> #27AE60
+hide <<green>> stereotype
+skinparam ClassBackgroundColor<<grey>> #EAECEE
+skinparam ClassBorderColor<<grey>> #2C3E50
+hide <<grey>> stereotype
+
+
+legend top
+    __Colors legend__ :
+    * __Keyple Distributed solution usage modes__ :
+    ** <back:lightGreen>**Reader Client Side**</back> (Local Service on **Client**)
+    ** <back:plum>**Reader Server Side**</back> (Local Service on **Server** with **Plugin** or **ObservablePlugin**)
+    ** <back:lightBlue>**Reader Server Side**</back> (Local Service on **Server** with **PoolPlugin**)
+end legend
+
+package "org.eclipse.keyple.core.distributed.local" as api {
+    +class "**final** DistributedLocalApiProperties" as ApiProperties {
+        +{static} **final** String VERSION
+    }
+    +interface LocalServiceApi {
+        - -
+        +String executeLocally (String jsonData, String readerName)
+        .. <back:lightBlue>**Pool Reader Server Side**</back> ..
+        +void setPoolPluginNames (String... poolPluginNames)
+    }
+    package spi {
+        +interface LocalServiceFactorySpi {
+            +String getDistributedLocalApiVersion ()
+            +String getCommonApiVersion ()
+            +String getLocalServiceName ()
+            +LocalServiceSpi getLocalService ()
+        }
+        +interface LocalServiceSpi {
+            - -
+            +void connect (LocalServiceApi localServiceApi)
+            +String getName ()
+            .. <back:plum>**Reader Server Side**</back> ..
+            +void onPluginEvent (String readerName, String jsonData)
+            +void onReaderEvent (String readerName, String jsonData)
+        }
+    }
+}
+
+
+LocalServiceFactorySpi .left.> ApiProperties #3498DB : provide\nAPI version <
+LocalServiceFactorySpi ..> LocalServiceSpi #3498DB : provide >
+
+LocalServiceSpi .left.> LocalServiceApi #27AE60 : use >
+
+
+
+
+package api #F8F9F9 {}
+package spi #F2F3F4 {}
+
+@enduml
+
+PlantUML version 1.2021.7(Sun May 23 14:40:07 CEST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: fr
+Country: FR
+--></g></svg>
