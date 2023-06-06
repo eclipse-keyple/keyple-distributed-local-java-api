@@ -1,3 +1,10 @@
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=eclipse_keyple-distributed-local-java-api&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=eclipse_keyple-distributed-local-java-api)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=eclipse_keyple-distributed-local-java-api&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=eclipse_keyple-distributed-local-java-api)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=eclipse_keyple-distributed-local-java-api&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=eclipse_keyple-distributed-local-java-api)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=eclipse_keyple-distributed-local-java-api&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=eclipse_keyple-distributed-local-java-api)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=eclipse_keyple-distributed-local-java-api&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=eclipse_keyple-distributed-local-java-api)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=eclipse_keyple-distributed-local-java-api&metric=coverage)](https://sonarcloud.io/summary/new_code?id=eclipse_keyple-distributed-local-java-api)
+
 # Keyple Distributed Local Java API
 
 ## Overview
