@@ -7,8 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - `CHANGELOG.md` file (issue [eclipse/keyple#6]).
-- CI: Forbid the publication of a version already released (issue [#3]).
+- Added a new method `int exchangeApiLevel(int coreApiLevel)` to the `LocalServiceSpi` interface to enable Core and 
+  Distributed layers to exchange their JSON API levels.
 - Added project status badges on `README.md` file.
+- CI: Forbid the publication of a version already released (issue [#3]).
 ### Fixed
 - CI: code coverage report when releasing.
 

@@ -38,6 +38,15 @@ public interface LocalServiceSpi {
   String getName();
 
   /**
+   * Exchanges the JSON API levels between the Keyple Core and Distributed layers.
+   *
+   * @param coreApiLevel The JSON API level of the Core layer.
+   * @return The JSON API level of the Distributed layer.
+   * @since 2.1.0
+   */
+  int exchangeApiLevel(int coreApiLevel);
+
+  /**
    * Invoked when a plugin event occurs in order to be forwarded to the remote plugin.
    *
    * <p>This method will only be invoked if the start reader detection functional method has been
