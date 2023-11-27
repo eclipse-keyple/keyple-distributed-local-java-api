@@ -1,6 +1,6 @@
 @startuml
 title
-    Keyple - keyple-distributed-local-java-api - 2.0.+ (24/06/2021)
+    Keyple - keyple-distributed-local-java-api - 2.1.+ (2023-09-13)
 end title
 
 ' == THEME ==
@@ -15,13 +15,19 @@ end title
 !define C_LINK 3498DB
 !define C_USE 27AE60
 
-skinparam Shadowing false
-skinparam ClassFontStyle italic
-skinparam ClassBorderColor #D4AC0D
+' -- Styles that don't work with new version of plantuml --
 skinparam stereotypeABorderColor #A9DCDF
 skinparam stereotypeIBorderColor #B4A7E5
 skinparam stereotypeCBorderColor #ADD1B2
 skinparam stereotypeEBorderColor #EB93DF
+' -- END --
+
+skinparam ClassBorderThickness 2
+skinparam ArrowThickness 2
+
+' Yellow
+skinparam ClassBackgroundColor #FEFECE
+skinparam ClassBorderColor #D4AC0D
 ' Red
 skinparam ClassBackgroundColor<<red>> #FDEDEC
 skinparam ClassBorderColor<<red>> #E74C3C
@@ -74,6 +80,7 @@ package "org.eclipse.keyple.core.distributed.local" as api {
             --
             +void connect (LocalServiceApi localServiceApi)
             +String getName ()
+            +<color:blue>int exchangeApiLevel (int coreApiLevel)
             .. <back:plum>**Reader Server Side**</back> ..
             +void onPluginEvent (String readerName, String jsonData)
             +void onReaderEvent (String readerName, String jsonData)
@@ -95,6 +102,6 @@ LocalServiceSpi .left.> LocalServiceApi #C_USE : use >
 ' == STYLE ==
 
 package api #C_GREY1 {}
-package spi #C_GREY2 {}
+package api.spi #C_GREY2 {}
 
 @enduml
