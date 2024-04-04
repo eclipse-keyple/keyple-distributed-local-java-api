@@ -3,7 +3,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 plugins {
     java
-    id("com.diffplug.spotless") version "5.10.2"
+    id("com.diffplug.spotless") version "6.25.0"
     id("org.sonarqube") version "3.1"
     jacoco
 }
@@ -29,8 +29,10 @@ repositories {
     maven(url = "https://oss.sonatype.org/content/repositories/snapshots")
 }
 dependencies {
-    testImplementation("junit:junit:4.13.2")
-    testImplementation("org.assertj:assertj-core:3.15.0")
+    testImplementation(platform("org.junit:junit-bom:5.10.2"))
+    testImplementation("org.junit.jupiter:junit-jupiter")
+    testImplementation("org.junit.vintage:junit-vintage-engine")
+    testImplementation("org.assertj:assertj-core:3.23.1")
 }
 
 val javaSourceLevel: String by project
