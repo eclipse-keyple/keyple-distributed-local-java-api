@@ -1,4 +1,4 @@
-url: https://github.com/eclipse/keyple-distributed-local-java-api
+url: https://github.com/eclipse-keyple/keyple-distributed-local-java-api
 organization:
   name: Eclipse Keyple
   url: https://keyple.org/
@@ -10,9 +10,9 @@ developers:
   - name: Keyple Contributors
     email: keyple-dev@eclipse.org
 scm:
-  connection: scm:git:git://github.com/eclipse/keyple-distributed-local-java-api.git
-  developerConnection: scm:git:https://github.com/eclipse/keyple-distributed-local-java-api.git
-  url: https://github.com/eclipse/keyple-distributed-local-java-api
+  connection: scm:git:git://github.com/eclipse-keyple/keyple-distributed-local-java-api.git
+  developerConnection: scm:git:https://github.com/eclipse-keyple/keyple-distributed-local-java-api.git
+  url: https://github.com/eclipse-keyple/keyple-distributed-local-java-api
 ciManagement:
   system: Jenkins
   url: https://ci.eclipse.org/keyple/job/Keyple/job/keyple-distributed-local-java-api/
