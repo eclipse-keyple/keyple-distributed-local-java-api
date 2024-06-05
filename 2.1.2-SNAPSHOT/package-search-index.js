@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"org.eclipse.keyple.core.distributed.local"},{"l":"org.eclipse.keyple.core.distributed.local.spi"}];updateSearchResults();
