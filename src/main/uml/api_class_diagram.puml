@@ -1,6 +1,6 @@
 @startuml
 title
-    Keyple - keyple-distributed-local-java-api - 2.1.+ (2023-09-13)
+    Keyple - keyple-distributed-local-java-api - 2.2.+ (2024-09-02)
 end title
 
 ' == THEME ==
@@ -60,27 +60,29 @@ legend top
 end legend
 
 package "org.eclipse.keyple.core.distributed.local" as api {
-    +class "**final** DistributedLocalApiProperties" as ApiProperties {
+    +class "**final** DistributedLocalApiProperties" as ApiProperties <<green>> {
         +{static} **final** String VERSION
     }
     +interface LocalServiceApi {
         --
         +String executeLocally (String jsonData, String readerName)
+        .. <back:lightGreen>**Reader Client Side**</back> ..
+        +<color:blue>boolean isReaderContactless (String readerName)
         .. <back:lightBlue>**Pool Reader Server Side**</back> ..
         +void setPoolPluginNames (String... poolPluginNames)
     }
     package spi {
-        +interface LocalServiceFactorySpi {
+        +interface LocalServiceFactorySpi <<red>> {
             +String getDistributedLocalApiVersion ()
             +String getCommonApiVersion ()
             +String getLocalServiceName ()
             +LocalServiceSpi getLocalService ()
         }
-        +interface LocalServiceSpi {
+        +interface LocalServiceSpi <<red>> {
             --
             +void connect (LocalServiceApi localServiceApi)
             +String getName ()
-            +<color:blue>int exchangeApiLevel (int coreApiLevel)
+            +int exchangeApiLevel (int coreApiLevel)
             .. <back:plum>**Reader Server Side**</back> ..
             +void onPluginEvent (String readerName, String jsonData)
             +void onReaderEvent (String readerName, String jsonData)
