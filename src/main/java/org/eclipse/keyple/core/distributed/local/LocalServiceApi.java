@@ -19,6 +19,20 @@ package org.eclipse.keyple.core.distributed.local;
 public interface LocalServiceApi {
 
   /**
+   * Returns true if the reader is contactless.
+   *
+   * <p>This feature is only useful for the <b>Reader Client Side</b> usage mode. The aim is to
+   * enable the local service to immediately retrieve the information in order to send it to the
+   * server at the time of the remote service's execution request.
+   *
+   * @param readerName The name of the reader to check.
+   * @return True if the reader is contactless
+   * @throws IllegalStateException If the service or the reader is no longer registered.
+   * @since 2.2.0
+   */
+  boolean isReaderContactless(String readerName);
+
+  /**
    * Specifies the names of the local pool plugins to manage.
    *
    * <p>This feature is only useful for remote control of pool plugins.
