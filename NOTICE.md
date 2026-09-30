@@ -24,7 +24,7 @@ listed source code repository logs.
 ## Declared Project Licenses
 
 This program and the accompanying materials are made available under the terms
-of the MIT which is available at https://opensource.org/licenses/MIT
+of the MIT which is available at https://opensource.org/license/mit/
 
 SPDX-License-Identifier: MIT
    
